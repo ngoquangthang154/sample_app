@@ -1,2 +1,44 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div class="center jumbotron">
+	  <h1>Welcome to the Sample App</h1>
+
+	  <h2>
+	    This is the home page for the
+	    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+	    sample application.
+	  </h2>
+	  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+	</div>
+
+	<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
+
+    <%= link_to image_tag("kitten.jpg", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
+		
+    <!-- <div class="container" style="width: 300px; height: 300px">
+    	<form>
+    	  <h3>Test Login</h3>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		  <div class="form-check">
+		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+    </div> -->
+  </body>
+</html>
